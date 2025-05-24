@@ -16,7 +16,7 @@ function Navbar() {
     <nav className="navbar">
       <div className="nav-container">
         <Link to="/" className="nav-logo">
-          <span>Portfolio</span>
+          <span>Ruchith Y K</span>
         </Link>
         
         <div className={`nav-menu ${isMenuOpen ? 'active' : ''}`}>

@@ -1,16 +1,14 @@
-import React from 'react'
+import React from "react";
 
 function Skills() {
   const skillCategories = [
     {
       title: "Frontend",
       skills: [
-        { name: 'JavaScript', icon: '🟨', level: 90 },
-        { name: 'React', icon: '⚛️', level: 85 },
-        { name: 'TypeScript', icon: '🔷', level: 80 },
+        { name: 'JavaScript', icon: 'JS', level: 70 },
+        { name: 'React', icon: '⚛️', level: 60 },
         { name: 'HTML5', icon: '🟧', level: 95 },
         { name: 'CSS3', icon: '🎨', level: 90 },
-        { name: 'Next.js', icon: '▲', level: 75 }
       ]
     },
     {
@@ -18,21 +16,21 @@ function Skills() {
       skills: [
         { name: 'Node.js', icon: '🟢', level: 85 },
         { name: 'Python', icon: '🐍', level: 80 },
-        { name: 'Express.js', icon: '🚀', level: 85 },
+        { name: 'Express.js', icon: 'EX', level: 85 },
         { name: 'MongoDB', icon: '🍃', level: 75 },
-        { name: 'PostgreSQL', icon: '🐘', level: 70 },
-        { name: 'REST APIs', icon: '🔗', level: 90 }
+        { name: 'Java', icon: '☕', level: 80 },
+        { name: 'C/C++', icon: '🔗', level: 80 }
+
       ]
     },
     {
       title: "Tools & DevOps",
       skills: [
         { name: 'Git', icon: '📊', level: 90 },
-        { name: 'Docker', icon: '🐳', level: 70 },
         { name: 'AWS', icon: '☁️', level: 65 },
-        { name: 'Webpack', icon: '📦', level: 75 },
-        { name: 'Jest', icon: '🧪', level: 80 },
-        { name: 'Linux', icon: '🐧', level: 75 }
+        { name: 'Linux', icon: '🐧', level: 75 },
+        { name: 'Postman', icon: '✉️', level: 75 }
+
       ]
     }
   ];
@@ -46,6 +44,7 @@ function Skills() {
             <p className="page-description">
               Here are the technologies and tools I work with to bring ideas to life.
             </p>
+
           </div>
 
           {skillCategories.map((category, index) => (
@@ -74,38 +73,35 @@ function Skills() {
           ))}
 
           <div className="experience-section">
-            <h2 className="section-title">Experience</h2>
+            <h2 className="section-title">Education</h2>
             <div className="timeline">
               <div className="timeline-item">
                 <div className="timeline-dot"></div>
                 <div className="timeline-content">
-                  <h3>Senior Full Stack Developer</h3>
-                  <p className="company">Tech Company • 2022 - Present</p>
+                  <h3>Christ School,Hassan</h3>
+                  <p className="company">Batch-2020</p>
                   <p className="description">
-                    Led development of scalable web applications using React, Node.js, and AWS. 
-                    Mentored junior developers and improved team productivity by 30%.
+                    Percentage-85%
                   </p>
                 </div>
               </div>
               <div className="timeline-item">
                 <div className="timeline-dot"></div>
                 <div className="timeline-content">
-                  <h3>Full Stack Developer</h3>
-                  <p className="company">Startup Inc • 2021 - 2022</p>
+                  <h3>Brilliant PU Collage,Hassan</h3>
+                  <p className="company">Batch - 2022</p>
                   <p className="description">
-                    Built and maintained multiple web applications from concept to deployment. 
-                    Collaborated with designers and product managers to deliver user-focused solutions.
+                    Percentage-91%
                   </p>
                 </div>
               </div>
               <div className="timeline-item">
                 <div className="timeline-dot"></div>
                 <div className="timeline-content">
-                  <h3>Junior Developer</h3>
-                  <p className="company">Digital Agency • 2020 - 2021</p>
+                  <h3>Malnad College of Engineering,Hassan</h3>
+                  <p className="company">Batch 2022 - 2026</p>
                   <p className="description">
-                    Developed responsive websites and web applications. 
-                    Learned modern development practices and agile methodologies.
+                    Degree-B.E Computer Science<br/>CGPA-8.5
                   </p>
                 </div>
               </div>

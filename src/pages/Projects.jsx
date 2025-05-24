@@ -4,76 +4,49 @@ function Projects() {
   const projects = [
     {
       id: 1,
-      title: 'E-Commerce Platform',
-      description: 'Full-stack e-commerce solution with React, Node.js, and MongoDB. Features include user authentication, payment integration, admin dashboard, and real-time inventory management.',
-      longDescription: 'A comprehensive e-commerce platform built from scratch with modern technologies. The application features a responsive design, secure payment processing through Stripe, real-time inventory tracking, order management system, and an intuitive admin dashboard for managing products and orders.',
-      tags: ['React', 'Node.js', 'MongoDB', 'Stripe', 'Express', 'JWT'],
-      github: 'https://github.com/yourusername/ecommerce-platform',
-      demo: 'https://your-ecommerce-demo.com',
-      image: '/api/placeholder/600/400',
+      title: 'Complaint Management System',
+      description: 'The Complaint Management System is a full-stack application built using the MERN stack (MongoDB, Express.js, React, and Node.js). It is designed to streamline the process of lodging, tracking, and resolving complaints efficiently.',
+      tags: ['React', 'Node.js', 'MongoDB', 'NodeJS', 'Express'],
+      github: 'https://github.com/RuchithYK/Complaint_Management_System',
+      demo: 'https://github.com/RuchithYK/Complaint_Management_System',
+      image: '/complaint-management-banner.jpeg',
       size: 'large',
       featured: true
     },
     {
       id: 2,
       title: 'Task Management App',
-      description: 'Collaborative task management application with real-time updates, team collaboration features, and intuitive drag-and-drop interface.',
       longDescription: 'A powerful task management application that enables teams to collaborate effectively. Features include real-time updates using Socket.io, drag-and-drop kanban boards, team member assignments, deadline tracking, and comprehensive project analytics.',
-      tags: ['React', 'Socket.io', 'Express', 'PostgreSQL', 'JWT'],
-      github: 'https://github.com/yourusername/task-manager',
-      demo: 'https://your-taskmanager-demo.com',
-      image: '/api/placeholder/600/400',
+      tags: [],
+      github: 'https://github.com/RuchithYK',
+      demo: 'https://github.com/RuchithYK',
+      image: '/task.jpg',
       size: 'medium',
-      featured: true
+      featured: false
     },
     {
       id: 3,
-      title: 'Weather Dashboard',
-      description: 'Beautiful weather application with location-based forecasts, interactive maps, and detailed weather analytics.',
-      longDescription: 'An elegant weather dashboard that provides comprehensive weather information. Features include geolocation-based forecasts, interactive weather maps, 7-day forecasts, weather alerts, and historical weather data visualization.',
-      tags: ['JavaScript', 'Weather API', 'Chart.js', 'CSS3'],
-      github: 'https://github.com/yourusername/weather-dashboard',
-      demo: 'https://your-weather-demo.com',
-      image: '/api/placeholder/600/400',
-      size: 'small',
-      featured: false
-    },
-    {
-      id: 4,
-      title: 'Social Media Dashboard',
-      description: 'Analytics dashboard for social media management with comprehensive reporting and scheduling features.',
-      longDescription: 'A comprehensive social media management dashboard that helps businesses track their social media performance across multiple platforms. Features include post scheduling, analytics reporting, engagement tracking, and competitor analysis.',
-      tags: ['React', 'Chart.js', 'REST API', 'Node.js', 'MongoDB'],
-      github: 'https://github.com/yourusername/social-dashboard',
-      demo: 'https://your-social-demo.com',
-      image: '/api/placeholder/600/400',
+      title: 'Country Flags',
+      description: 'The Country Flags Project is a simple web application built using HTML and JavaScript that displays country flags dynamically by fetching data from an external API. It allows users to search for a country and view its flag, making use of fetch() to retrieve flag images and details. This project is ideal for learning API integration and enhancing frontend development skills.',
+      tags: ['HTML','JavaScript'],
+      github: 'https://github.com/RuchithYK/project2?tab=readme-ov-file',
+      demo: 'https://ruchithyk.github.io/project2/',
+      image: '/flag.jpg',
       size: 'medium',
       featured: true
     },
     {
-      id: 5,
-      title: 'AI Chat Bot',
-      description: 'Intelligent chatbot with natural language processing capabilities and machine learning integration.',
-      longDescription: 'An advanced AI chatbot built with Python and natural language processing libraries. The bot can understand context, provide intelligent responses, and learn from user interactions to improve over time.',
-      tags: ['Python', 'NLP', 'Flask', 'TensorFlow', 'SQLite'],
-      github: 'https://github.com/yourusername/ai-chatbot',
-      demo: 'https://your-chatbot-demo.com',
-      image: '/api/placeholder/600/400',
-      size: 'large',
+      id: 4,
+      title: 'Tic Tac Toe Game',
+      description: 'The Tic Tac Toe Game is a simple interactive web application built using HTML and JavaScript. It allows two players to take turns marking X and O on a 3x3 grid. The game checks for winning conditions after each move and displays the result (win, draw, or ongoing). Designed with basic styling, it enhances JavaScript skills by implementing event handling, game logic, and dynamic UI updates.',
+      tags: ['HTML','JavaScript'],
+      github: 'https://github.com/RuchithYK/tic-tac-toe',
+      demo: 'https://ruchithyk.github.io/tic-tac-toe/',
+      image: '/tic.jpg',
+      size: 'medium',
       featured: true
-    },
-    {
-      id: 6,
-      title: 'Portfolio Website',
-      description: 'Responsive portfolio website built with React and modern CSS, featuring smooth animations and optimized performance.',
-      longDescription: 'A modern, responsive portfolio website showcasing development projects and skills. Built with React and featuring smooth animations, optimized performance, and a clean, professional design.',
-      tags: ['React', 'CSS3', 'Responsive', 'Animations'],
-      github: 'https://github.com/yourusername/portfolio',
-      demo: 'https://your-portfolio-demo.com',
-      image: '/api/placeholder/600/400',
-      size: 'small',
-      featured: false
     }
+    
   ];
 
   const featuredProjects = projects.filter(project => project.featured);
@@ -97,6 +70,7 @@ function Projects() {
               {featuredProjects.map(project => (
                 <div key={project.id} className={`project-card ${project.size}`}>
                   <div className="project-image">
+                    <h3 className="project-title">{project.title}</h3>
                     <img src={project.image} alt={project.title} />
                     <div className="project-overlay">
                       <div className="project-links">
@@ -106,7 +80,7 @@ function Projects() {
                           rel="noopener noreferrer"
                           className="project-link-btn"
                         >
-                          <Github size={20} />
+                          <Github size={40} />
                         </a>
                         <a 
                           href={project.demo} 
@@ -114,17 +88,16 @@ function Projects() {
                           rel="noopener noreferrer"
                           className="project-link-btn"
                         >
-                          <ExternalLink size={20} />
+                          <ExternalLink size={40} />
                         </a>
                       </div>
                     </div>
                   </div>
                   <div className="project-content">
-                    <h3 className="project-title">{project.title}</h3>
                     <p className="project-description">{project.description}</p>
                     <div className="project-tags">
                       {project.tags.map((tag, index) => (
-                        <span key={index} className="project-tag">{tag}</span>
+                        <span key={index} className="project-tag">{tag+"  "}</span>
                       ))}
                     </div>
                   </div>
@@ -141,6 +114,8 @@ function Projects() {
                 <div key={project.id} className="project-card-simple">
                   <div className="project-header">
                     <h3 className="project-title">{project.title}</h3>
+                    <img src={project.image} alt={project.title} />
+
                     <div className="project-links">
                       <a 
                         href={project.github} 
@@ -148,7 +123,7 @@ function Projects() {
                         rel="noopener noreferrer"
                         className="project-link-btn"
                       >
-                        <Github size={18} />
+                        <Github size={40} />
                       </a>
                       <a 
                         href={project.demo} 
@@ -156,7 +131,7 @@ function Projects() {
                         rel="noopener noreferrer"
                         className="project-link-btn"
                       >
-                        <ExternalLink size={18} />
+                        <ExternalLink size={40} />
                       </a>
                     </div>
                   </div>

@@ -9,7 +9,7 @@ function Home() {
         <div className="hero-content">
           <div className="hero-text">
             <h1 className="hero-title">
-              Hi, I'm <span className="highlight">Your Name</span>
+              Hi, I'm <span className="highlight">Ruchith Y K</span>
             </h1>
             <p className="hero-subtitle">Full Stack Developer</p>
             <p className="hero-description">
@@ -42,24 +42,21 @@ function Home() {
             <div className="about-text">
               <h2 className="section-title">About Me</h2>
               <p className="about-description">
-                I'm a passionate full-stack developer with over 3 years of experience 
+                I'm a passionate full-stack developer with years of experience 
                 building web applications. I love turning complex problems into simple, 
                 beautiful designs. When I'm not coding, you'll find me exploring new 
                 technologies or contributing to open-source projects.
               </p>
               <div className="about-stats">
                 <div className="stat">
-                  <h3>50+</h3>
+                  <h3>10+</h3>
                   <p>Projects Completed</p>
                 </div>
                 <div className="stat">
-                  <h3>3+</h3>
+                  <h3>1+</h3>
                   <p>Years Experience</p>
                 </div>
-                <div className="stat">
-                  <h3>20+</h3>
-                  <p>Happy Clients</p>
-                </div>
+                
               </div>
             </div>
             <div className="about-image">
@@ -80,29 +77,26 @@ function Home() {
           </p>
           <div className="contact-links">
             <a 
-              href="https://github.com/yourusername" 
+              href="https://github.com/RuchithYK" 
               target="_blank" 
               rel="noopener noreferrer"
               className="contact-link"
             >
-              <Github size={24} />
-              <span>GitHub</span>
+              <Github size={50} />
             </a>
             <a 
-              href="https://linkedin.com/in/yourusername" 
+              href="https://linkedin.com/in/ruchith-y-k-07ab7b267" 
               target="_blank" 
               rel="noopener noreferrer"
               className="contact-link"
             >
-              <Linkedin size={24} />
-              <span>LinkedIn</span>
+              <Linkedin size={50} />
             </a>
             <a 
-              href="mailto:your.email@example.com"
+              href="mailto:ruchithykhassan@gmail.com"
               className="contact-link"
             >
-              <Mail size={24} />
-              <span>Email</span>
+              <Mail size={50} />
             </a>
           </div>
         </div>

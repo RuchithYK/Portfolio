@@ -217,7 +217,7 @@ body {
 
 .floating-element {
   position: absolute;
-  font-size: 4rem;
+  font-size: 6rem;
   animation: float 6s ease-in-out infinite;
 }
 
@@ -228,14 +228,14 @@ body {
 }
 
 .floating-element:nth-child(2) {
-  top: 60%;
-  right: 30%;
+  top: 20%;
+  right: 10%;
   animation-delay: 2s;
 }
 
 .floating-element:nth-child(3) {
-  bottom: 20%;
-  left: 50%;
+  bottom: 10%;
+  left: 30%;
   animation-delay: 4s;
 }
 
@@ -427,4 +427,66 @@ body {
 .timeline-item:nth-child(odd) {
   left: 0;
   padding-right: 3rem;
+}
+
+
+.contact {
+  font-size: 1.1rem;
+  color: #666;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+}
+.contact-description{
+  margin-bottom: 2rem;
+}
+.contact-link{
+  margin-right: 2rem;
+}
+
+.other-projects{
+  margin-bottom: 1rem;
+}
+
+.featured-section{
+  margin-bottom: 2rem;
+}
+img{
+  max-width:40rem;
+}
+
+.project-card {
+  background-color: whitesmoke;
+  border-radius: 16px;
+  padding: 2rem;
+  margin-bottom: 7rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  font-size:1.3rem;
+
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+}
+
+
+.project-card-simple {
+  background-color: whitesmoke;
+  border-radius: 16px;
+  padding: 2rem;
+  margin-bottom: 7rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  font-size:1.3rem;
+}
+
+.project-card-simple:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+}
+.project-tags{
+    color: blue;
 }
