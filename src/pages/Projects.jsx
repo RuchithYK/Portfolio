@@ -9,7 +9,7 @@ function Projects() {
       tags: ['React', 'Node.js', 'MongoDB', 'NodeJS', 'Express'],
       github: 'https://github.com/RuchithYK/Complaint_Management_System',
       demo: 'https://github.com/RuchithYK/Complaint_Management_System',
-      image: '/complaint-management-banner.jpeg',
+      image: 'complaint-management-banner.jpeg',
       size: 'large',
       featured: true
     },
@@ -20,7 +20,7 @@ function Projects() {
       tags: [],
       github: 'https://github.com/RuchithYK',
       demo: 'https://github.com/RuchithYK',
-      image: '/task.jpg',
+      image: 'task.jpg',
       size: 'medium',
       featured: false
     },
@@ -31,7 +31,7 @@ function Projects() {
       tags: ['HTML','JavaScript'],
       github: 'https://github.com/RuchithYK/project2?tab=readme-ov-file',
       demo: 'https://ruchithyk.github.io/project2/',
-      image: '/flag.jpg',
+      image: 'flag.jpg',
       size: 'medium',
       featured: true
     },
@@ -42,7 +42,7 @@ function Projects() {
       tags: ['HTML','JavaScript'],
       github: 'https://github.com/RuchithYK/tic-tac-toe',
       demo: 'https://ruchithyk.github.io/tic-tac-toe/',
-      image: '/tic.jpg',
+      image: 'tic.jpg',
       size: 'medium',
       featured: true
     }
